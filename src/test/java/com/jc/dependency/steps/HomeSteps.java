@@ -13,9 +13,8 @@ public class HomeSteps extends BaseSteps {
         this.homePage = homePage;
     }
 
-    public void onHomePageCheck() {
-        System.out.println("In Home Steps");
+    public void openFlightStatus() {
         homePage
-                .checkHomePageMethod();
+                .openFlightStatus();
     }
 }

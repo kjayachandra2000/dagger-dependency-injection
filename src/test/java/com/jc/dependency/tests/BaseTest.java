@@ -16,7 +16,7 @@ public abstract class BaseTest {
     WebDriver driver;
 
     @BeforeEach
-    public void beforeAll() {
+    public void beforeEach() {
         BaseComponent baseComponent = DaggerBaseComponent.create();
         baseComponent.inject(this);
         performInjection(baseComponent);
@@ -25,7 +25,7 @@ public abstract class BaseTest {
     }
 
     @AfterEach
-    public void afterAll() {
+    public void afterEach() {
         driver.quit();
     }
 
